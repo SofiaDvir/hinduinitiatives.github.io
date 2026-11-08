@@ -1,689 +1,1088 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    <meta name="description" content="List of non-profit and for-profit hindu organisations working towards helping hindus and protecting santana dharma.">
-    <meta name="keywords" content="sanatan, hindu, hinduism, dharma, bharat, india, donation, ngo">
-    <title>List of Hindu Initiatives for Donations & Services</title>
-    <link rel="icon" href="https://media.istockphoto.com/id/1317442533/vector/ohm-symbol-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=VWXV8gtl-F71o5kpaKTh7Rpn3ESrSrYHJaH6Y0B7cYU=" type="image/x-icon">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#8d321e">
+<meta name="robots" content="index, follow">
+<meta name="description" content="List of NGOs working towards helping hindus and protecting santana dharma.">
+<meta name="keywords" content="ngo, hindu, sanatan, sanatana, hinduism, dharma, bharat, india, donation">
 
-    <!-- Open Graph Card-->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://hinduinitiatives.com/" />
-    <meta property="og:title" content="hinduinitiatives.com" />
-    <meta property="og:description" content="List of non-profit & for-profit hindu organisations working towards protecting santana dharma." />
-    <meta property="og:image" content="https://hinduinitiatives.com/socialcard2.png" />
-    
-    <!-- Twitter specific Open Graph -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://hinduinitiatives.com/" />
-    <meta name="twitter:title" content="hinduinitiatives.com" />
-    <meta name="twitter:description" content="List of non-profit & for-profit hindu organisations working towards protecting santana dharma." />
-    <meta name="twitter:image" content="https://hinduinitiatives.com/socialcard2.png" />
+<title>Hindu NGOs for Dharmic Donation</title>
+<link rel="icon" href="https://media.istockphoto.com/id/1317442533/vector/ohm-symbol-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=VWXV8gtl-F71o5kpaKTh7Rpn3ESrSrYHJaH6Y0B7cYU=" type="image/x-icon">
 
-    <style>
-        :root {
-            --primary-color: #3498db;
-            --secondary-color: #2ecc71;
-            --accent-color: #f39c12;
-            --text-dark: #2c3e50;
-            --text-light: #ecf0f1;
-            --background-light: #f9f9f9;
-            --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--background-light);
-            color: var(--text-dark);
-            padding-bottom: 2rem;
-        }
+<!-- Open Graph Card-->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://hinduinitiatives.com/" />
+<meta property="og:title" content="hinduinitiatives.com" />
+<meta property="og:description" content="List of non-profit & for-profit hindu organisations working towards protecting santana dharma." />
+<meta property="og:image" content="https://hinduinitiatives.com/socialcard3.png" />
 
-        .hero {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            padding: 3rem 0;
-            margin-bottom: 2rem;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
+<!-- Twitter specific Open Graph -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content="https://hinduinitiatives.com/" />
+<meta name="twitter:title" content="hinduinitiatives.com" />
+<meta name="twitter:description" content="List of non-profit & for-profit hindu organisations working towards protecting santana dharma." />
+<meta name="twitter:image" content="https://hinduinitiatives.com/socialcard3.png" />
 
-        .hero h1 {
-            font-weight: 700;
-            letter-spacing: -0.5px;
-        }
+<style>
+:root {
+    --saffron: #c66b28;
+    --deep: #762c20;
+    --maroon: #7c3025;
+    --gold: #c49a52;
+    --cream: #fffaf0;
+    --light: #f8eddb;
+    --text: #45352b;
+    --muted: #89786b;
+}
 
-        .hero p {
-            opacity: 0.9;
-            max-width: 600px;
-            margin: 0 auto;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        .search-container {
-            background-color: white;
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin-bottom: 2rem;
-            box-shadow: var(--card-shadow);
-        }
+body {
+    background: var(--cream);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.6;
+}
 
-        .search-input {
-            border-radius: 50px;
-            padding: 0.75rem 1.5rem;
-            border-color: #ddd;
-            box-shadow: none;
-            font-weight: 500;
-            padding-left: 2.5rem;
-        }
+/* NAVIGATION */
 
-        .search-icon {
-            position: absolute;
-            left: 1rem;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #aaa;
-        }
+nav {
+    padding: 17px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eadcc8;
+    background: rgba(255,250,240,0.96);
+}
 
-        .input-group-search {
-            position: relative;
-        }
+.logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--deep);
+    letter-spacing: 1px;
+}
 
-        .ngo-card {
-            background-color: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: var(--card-shadow);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            height: 100%;
-            cursor: pointer;
-        }
+.logo span {
+    color: var(--gold);
+}
 
-        .ngo-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-        }
+.nav-tagline {
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 1px;
+}
 
-        .ngo-card .card-body {
-            padding: 1.5rem;
-        }
+/* HERO */
 
-        .ngo-card h5 {
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            color: var(--primary-color);
-        }
+.hero {
+    text-align: center;
+    padding: 65px 20px 55px;
+    background:
+        radial-gradient(circle at 50% 0%, #f7dfbd 0%, transparent 65%),
+        var(--light);
+    position: relative;
+    overflow: hidden;
+}
 
-        .ngo-card p {
-            color: #666;
-            font-size: 0.95rem;
-        }
+.hero::before,
+.hero::after {
+    content: "✺";
+    position: absolute;
+    font-size: 140px;
+    color: rgba(196,154,82,0.12);
+    top: 15px;
+}
 
-        .tag {
-            display: inline-block;
-            background-color: #e9f7ef;
-            color: var(--secondary-color);
-            padding: 0.25rem 0.75rem;
-            border-radius: 50px;
-            font-size: 0.8rem;
-            margin: 0.25rem;
-            font-weight: 500;
-        }
+.hero::before { left: 5%; }
+.hero::after { right: 5%; }
 
-        .tag.services {
-            background-color: #fef5e7;
-            color: var(--accent-color);
-        }
+.om {
+    font-size: 37px;
+    color: var(--saffron);
+    margin-bottom: 12px;
+}
 
-        .no-results {
-            text-align: center;
-            padding: 3rem;
-            background-color: white;
-            border-radius: 12px;
-            box-shadow: var(--card-shadow);
-        }
+.hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(38px, 6vw, 58px);
+    color: var(--deep);
+    line-height: 1.1;
+    margin-bottom: 16px;
+}
 
-        .dropdown-select {
-            border-radius: 50px;
-            padding: 0.75rem 1.5rem;
-            border-color: #ddd;
-            box-shadow: none;
-            font-weight: 500;
-        }
+.hero p {
+    max-width: 570px;
+    margin: auto;
+    color: var(--muted);
+    font-size: 15px;
+}
 
-        .random-select-btn {
-            background-color: var(--primary-color);
-            color: white;
-            border: none;
-            padding: 0.75rem 1.5rem;
-            border-radius: 50px;
-            font-weight: 600;
-            transition: background-color 0.3s ease, transform 0.2s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-        }
+.hero .sanskrit {
+    margin-top: 22px;
+    color: var(--saffron);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+}
 
-        .random-select-btn:hover {
-            background-color: #2980b9;
-            transform: translateY(-2px);
-        }
+/* MAIN */
 
-        .random-select-btn:active {
-            transform: translateY(1px);
-        }
+.container {
+    max-width: 1120px;
+    margin: auto;
+    padding: 45px 22px 70px;
+}
 
-        .random-select-btn i {
-            margin-right: 5px;
-        }
+.section-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
 
-        .fade-in {
-            animation: fadeIn 0.5s ease forwards;
-        }
+.section-heading h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    color: var(--deep);
+}
 
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+.section-heading p {
+    color: var(--muted);
+    font-size: 14px;
+}
 
-        .spinner-border {
-            width: 3rem;
-            height: 3rem;
-        }
+/* FILTER SECTION */
 
-        .loading {
-            display: flex;
-            justify-content: center;
-            padding: 3rem;
-        }
+.filter-box {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    border: 1px solid #eee0ce;
+    box-shadow: 0 5px 22px rgba(90,50,20,0.045);
+    margin-bottom: 30px;
+}
 
-        @media (max-width: 767.98px) {
-            .hero {
-                padding: 2rem 0;
-            }
-            
-            .search-container {
-                padding: 1rem;
-            }
-            
-            .dropdown-select, .search-input {
-                margin-bottom: 1rem;
-            }
-        }
-    </style>
+.filter-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 12px;
+}
+
+select, input {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #e5d7c5;
+    border-radius: 8px;
+    background: var(--cream);
+    color: var(--text);
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+}
+
+select:focus, input:focus {
+    border-color: var(--saffron);
+}
+
+.search-hint {
+    margin-top: 9px;
+    font-size: 11px;
+    color: var(--muted);
+}
+
+.random-section {
+    margin-top: 22px;
+    padding-top: 20px;
+    border-top: 1px solid #eee5d8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.random-section p {
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.random-btn {
+    background: #f6e6cd;
+    color: var(--deep);
+    border: 1px solid #e8c99c;
+    border-radius: 8px;
+    padding: 12px 18px;
+    font-weight: 700;
+    white-space: nowrap;
+    transition: 0.2s;
+}
+
+.random-btn:hover {
+    background: #f0d5ae;
+}
+
+/* NGO LIST */
+
+.results-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.results-header h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 27px;
+    color: var(--deep);
+}
+
+#resultCount {
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.ngo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.ngo-card {
+    background: white;
+    border: 1px solid #eee2d2;
+    border-radius: 12px;
+    padding: 23px;
+    transition: 0.2s;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.ngo-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(90,50,20,0.08);
+    border-color: #dfc29b;
+}
+
+.ngo-card:focus-visible {
+    outline: 2px solid var(--saffron);
+    outline-offset: 3px;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.category-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.category-tag {
+    background: #f8eddb;
+    color: var(--deep);
+    border-radius: 30px;
+    padding: 5px 11px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.card-icon {
+    font-size: 25px;
+}
+
+.ngo-card h4 {
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--deep);
+    font-size: 25px;
+    margin-bottom: 9px;
+    line-height: 1.2;
+}
+
+.ngo-card .description {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.8;
+    margin-bottom: 18px;
+    flex-grow: 1;
+}
+
+.card-footer {
+    padding-top: 14px;
+    border-top: 1px solid #f0e8dc;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.donate-link {
+    text-decoration: none;
+    color: var(--saffron);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.donate-link:hover {
+    color: var(--deep);
+}
+
+/* RANDOM RESULT */
+
+.random-result {
+    display: none;
+    margin: 25px 0;
+    padding: 25px;
+    background: #fff5e5;
+    border: 1px solid #e8c99c;
+    border-radius: 12px;
+}
+
+.random-result h3 {
+    color: var(--deep);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.random-result .ngo-card {
+    box-shadow: none;
+    border-color: #e8c99c;
+}
+
+/* EMPTY STATE */
+
+.empty {
+    display: none;
+    text-align: center;
+    padding: 45px 15px;
+    color: var(--muted);
+}
+
+.empty span {
+    font-size: 35px;
+}
+
+.empty h3 {
+    color: var(--deep);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #63281e;
+    color: #f8e8d1;
+    padding: 35px 20px;
+    text-align: center;
+}
+
+footer h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 27px;
+    margin-bottom: 8px;
+}
+
+footer p {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+footer .footer-om {
+    font-size: 25px;
+    color: #e9b66d;
+    margin-bottom: 10px;
+}
+
+/* MOBILE */
+
+@media(max-width: 700px) {
+
+    nav {
+        padding: 13px 20px;
+    }
+
+    .nav-tagline {
+        display: none;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .nav-tagline {
+        font-size: 10px;
+        text-align: right;
+    }
+
+    .hero {
+        padding: 48px 20px;
+    }
+
+    .hero::before,
+    .hero::after {
+        font-size: 80px;
+    }
+
+    .container {
+        padding: 35px 15px 50px;
+    }
+
+    .filter-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-box {
+        padding: 18px;
+    }
+
+    .ngo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .random-section {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .random-btn {
+        width: 100%;
+    }
+
+    .results-header h3 {
+        font-size: 24px;
+    }
+}
+
+</style>
 </head>
+
 <body>
-    <!-- Title Section -->
-    <div class="hero text-center">
-        <div class="container">
-            <h1><i class="fa-solid fa-om"></i>&nbsp;&nbsp;Hindu Initiatives</h1>
-            <p class="mt-3">List of <strong>authenticate & verified</strong> orgs that support & promote dharma. Click on the org name to make a donation or use their service.</p>
-            <div class="d-flex justify-content-center">
-                <button id="randomNgoBtn" class="btn random-select-btn mt-4">
-                    <i class="fas fa-dice"></i> Help Me Choose One Organisation
-                </button>
-            </div>
-        </div>
+
+<!-- NAVIGATION -->
+
+<nav>
+    <!-- <div class="logo">दान<span>.</span></div> -->
+     <div class="logo">Hindu Initiatives<span></span></div>
+    <div class="nav-tagline">GIVE WITH PURPOSE · SERVE WITH LOVE</div>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="om">ॐ</div>
+
+    <h1>Let Your Giving<br>Make a Difference.</h1>
+
+    <p>
+        List of <strong>authentic, verified & efficient orgs</strong> that support & promote dharma.
+    </p>
+
+    <!-- <div class="sanskrit">
+        परोपकाराय सतां विभूतयः
+    </div> -->
+
+</section>
+
+<!-- MAIN CONTENT -->
+
+<main class="container">
+
+    <div class="section-heading">
+        <h2>Find a Cause Worth Supporting</h2>
+        <p>Explore organisations across different causes and categories.</p>
     </div>
 
-    <!-- Drop down section -->
-    <div class="container">
-        <!-- Search and Filter -->
-        <div class="search-container">
-            <div class="row align-items-center">
-                <div class="col-md-6 mb-3 mb-md-0">
-                    <div class="form-group">
-                        <label for="categoryFilter" class="mb-2"><i class="fas fa-filter me-2"></i>Donate as per Category:</label>
-                        <select id="categoryFilter" class="form-select dropdown-select">
-                            <option value="all">All Categories</option>
-                            <!-- Categories will be populated dynamically -->
-                        </select>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label for="searchInput" class="mb-2"><i class="fas fa-search me-2"></i>Or search any products to buy:</label>
-                        <div class="input-group-search">
-                            <i class="fas fa-search search-icon"></i>
-                            <input type="text" id="searchInput" class="form-control search-input" placeholder="Type 'Ghee' or 'Atta' etc.">
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- FILTERS -->
+
+    <section class="filter-box">
+
+        <div class="filter-grid">
+
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+                <option value="Annadanam">Annadanam</option>
+                <option value="Animals">Animals</option>
+                <option value="Army">Army</option>
+                <option value="Children">Children</option>
+                <option value="Environment">Environment</option>
+                <option value="Legal">Legal</option>
+                <option value="Media">Media</option>
+                <option value="Men">Men</option>
+                <option value="Refugee">Refugee</option>
+                <option value="Senior Citizen">Senior Citizen</option>
+                <option value="Temple re(construction)">Temple re(construction)</option>
+                <option value="Women">Women</option>
+            </select>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search NGOs, causes, descriptions..."
+                autocomplete="off"
+            >
+
         </div>
 
-        <!-- NGO Listings -->
-        <div id="ngo-container" class="row g-4">
-            <!-- NGO cards will be inserted here -->
-            <div class="loading">
-                <div class="spinner-border text-primary" role="status">
-                    <span class="visually-hidden">Loading...</span>
-                </div>
-            </div>
+        <p class="search-hint">
+            Search automatically as you type.
+        </p>
+
+        <div class="random-section">
+
+            <p>
+                Confused where to donate? Let destiny choose a cause for you.
+            </p>
+
+            <button class="random-btn" onclick="randomNGO()">
+                ✦ Choose any one org
+            </button>
+
         </div>
-    </div>
 
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    
-    <script>
-        // NGO data
-        const ngos = [
-            {
-                id: 1,
-                name: "Hindu Fund",
-                description: "A movement to build ₹1,000 Crore corpus to protect & promote dharma. They provide grants (fund) to all sorts of Dharmic projects run by orgs & individuals.",
-                tags: [],
-                website: "https://hindu.fund/",
-                displayTag: ["donation"]
-            },
-            {
-                id: 2,
-                name: "Kamakhya Bhairava Upasaka Foundation",
-                description: "Working to promote tantra-based practices, building Bhairava temples & doing free food distributions (annadanam).",
-                tags: ["annadanam", "temple (re)construction"],
-                website: "https://kamakhyabhairavaupasaka.com/",
-                displayTag: ["donation"]
-            },
-            {
-                id: 4,
-                name: "Sewa Nyaya Utthan Foundation",
-                description: "They help hindu refugees, gau seva (cow service), marginalized hindu communities, poor hindu children & women, and many other dharmic activities.",
-                tags: ["gau seva", "refugee", "children","women"],
-                website: "https://sewanyaya.in/",
-                displayTag: ["donation"]
-            },
-            {
-                id: 5,
-                name: "Prachyam",
-                description: "World's first Indic OTT platform. It is a Netflix-Style platform for Hindus.",
-                tags: ["media","services"],
-                website: "https://prachyam.com/",
-                displayTag: ["services"]
-            },
-            {
-                id: 6,
-                name: "Healing Himalayas",
-                description: "Cleaning out 100s of tonnes of trash from many dharmic places like Himalayas, Kedarnath etc.",
-                tags: ["environment"],
-                website: "https://www.healinghimalayas.org/",
-                displayTag: ["donation"]
-            },
-            {
-                id: 7,
-                name: "Phool",
-                description: "Recycling floral waste coming from temples to make incense sticks (agarbatti) & cones and many other environment friendly items.",
-                tags: ["environment","services"],
-                website: "https://phool.co/",
-                displayTag: ["services"]
-            },
-            {
-                id: 8,
-                name: "Indic Collective",
-                description: "They pursue legal actions, advocacy & initiatives in courts & public forums to protect hindu sites & rituals.",
-                tags: ["legal"],
-                website: "https://www.indiccollective.org/",
-                displayTag: ["donation"]
-            },
-            {
-                id: 9,
-                name: "Gavyadhya",
-                description: "Family making pure homemade ghee through ancient bilona method using milk from organically & ethically raised gir cows.",
-                tags: ["gau seva","services"],
-                website: "https://x.com/gircow_ghee",
-                displayTag: ["services"]
-            },
-            {
-                id: 10,
-                name: "Reclaim Temples",
-                description: "They trace, locate, document, rebuild and revive worship in Hindu temples destroyed by invaders and their successors.",
-                tags: ["temple (re)construction"],
-                website: "https://unct.be/reclaimtemples",
-                displayTag: ["donation"]
-            },
-            {
-                id: 11,
-                name: "Two Brothers",
-                description: "Selling organic A2 gir cow ghee, jaggery, oils, haldi (turmeric), honey, dal, atta (wheat flour) & other grocery products.",
-                tags: ["environment","gau seva","services"],
-                website: "https://twobrothersindiashop.com/",
-                displayTag: ["services"]
-            },
-            {
-                id: 12,
-                name: "People for Dharma",
-                description: "They pursue legal actions, advocacy & initiatives in courts & public forums to protect hindu sites & practices.",
-                tags: ["legal"],
-                website: "https://peoplefordharma.org/",
-                displayTag: ["donation"]
-            },
-            {
-                id: 13,
-                name: "Bharat Ke Veer",
-                description: "Directly donate to family of a martyr. Or to the corpus fund that distributes the money to fallen soilders in AR, BSF, CISF, CRPF, ITBP, NDRF, SSB & NSG.",
-                tags: ["army"],
-                website: "https://bharatkeveer.gov.in/",
-                displayTag: ["donation"]
-            },
-            {
-                id: 14,
-                name: "Upword",
-                description: "They produce well-researched text & video content on multiple dharmic topics and publishes them across multiple social media platforms.",
-                tags: ["media"],
-                website: "https://upword.co/",
-                displayTag: ["donation"]
-            },
-            {
-                id: 15,
-                name: "National Defence Fund",
-                description: "Donations to this fund is used for the welfare of the members of the Armed Forces (including Para Military Forces) and their dependents.",
-                tags: ["army"],
-                website: "https://ndf.gov.in/",
-                displayTag: ["donation"]
-            },
-            {
-                id: 16,
-                name: "Aseem Foundation",
-                description: "Working on various domains like women & children education, social entrepreneurship, awareness campaign etc. in sensitive areas like Jammu & Kashmir.",
-                tags: ["children","environment","women"],
-                website: "https://www.aseemfoundation.org/",
-                displayTag: ["donation"]
-            },
-            {
-                id: 17,
-                name: "Parivaar",
-                description: "Inspired by ideals of Sri Ramakrishna & Swami Vivekananda, Parivaar focuses on development of highly vulnerable people from impoverished Hindu communities in West Bengal & tribal areas of Madhya Pradesh.",
-                tags: ["children","women"],
-                website: "https://parivaar.org/",
-                displayTag: ["donation"]
-            },
-            {
-                id: 18,
-                name: "Paramhansa Yogananda Public Charitable Trust",
-                description: "Provides home, free/subsidized medical treatment to all abandoned, aged, destitute women, mainly widows.",
-                tags: ["senior citizen","women"],
-                website: "https://yoganandatrust.org/",
-                displayTag: ["donation"]
-            },
-            {
-                id: 19,
-                name: "Sarthak Prayas",
-                description: "Running a blood donor network, providing education to underprivileged children & providing welfare to struggling senior citizens in Delhi/NCR.",
-                tags: ["senior citizen","women","children"],
-                website: "https://www.sarthakprayas.ngo/",
-                displayTag: ["donation"]
-            },
-            {
-                id: 20,
-                name: "Agni Samāj",
-                description: "Runs multiple dharmic initiatives like stopping illegal conversions, bollywood propaganda through 'Gems of Bollywood', also provides Veda Sanskrit courses.",
-                tags: ["legal","media","women","services"],
-                website: "https://agnisamaj.com/payment/",
-                displayTag: ["donation","services"]
-            },
-            {
-                id: 21,
-                name: "Dharm Ki Raah",
-                description: "Ramesh Patel travels to remote locations of Chitrakoot to document lives & advice of Sadhaks on YouTube. He also takes donation & uses it to purchase required items for these sadhaks.",
-                tags: ["annadanam","pujari (priest)","media"],
-                website: "https://www.youtube.com/@DharmkiRaah",
-                displayTag: ["donation"]
-            },
-            {
-                id: 22,
-                name: "Maksika",
-                description: "Selling conciously & organically grown honey, soaps, beewax candles.",
-                tags: ["environment","services"],
-                website: "https://maksikahoney.com/",
-                displayTag: ["services"]
-            },
-            {
-                id: 23,
-                name: "Rosier Foods",
-                description: "Selling organic A2 gir cow ghee, cooking oils, atta (wheat flour) etc. Initiative is led by Gaurav Taneja (Flying Beast)",
-                tags: ["gau seva","services"],
-                website: "https://www.rosierfoods.com/",
-                displayTag: ["services"]
-            },
-            {
-                id: 24,
-                name: "IshaLife",
-                description: "Selling organic A2 gir cow ghee, rudraksha mala, millets, haldi (turmeric), honey, fashion items etc. Initiative is led by Sadhguru.",
-                tags: ["environment","gau seva","services"],
-                website: "https://ishalife.sadhguru.org/",
-                displayTag: ["services"]
-            },
-            {
-                id: 25,
-                name: "EaseMyTrip",
-                description: "A travel company founded & operated by Hindus. Services offered: Holiday, Flight/Airplane, Hotel, Train, Bus, ticket booking.",
-                tags: ["services"],
-                website: "https://www.easemytrip.com/",
-                displayTag: ["services"]
-            },
-            {
-                id: 26,
-                name: "The Whole Truth",
-                description: "Selling clean whey protein powder, peanut butter, muesli, energy & protein bars. They don't even use artificial sweeteners.",
-                tags: ["services"],
-                website: "https://www.thewholetruthfoods.com/",
-                displayTag: ["services"]
-            },
-            {
-                id: 27,
-                name: "Shridhar Sewa Foundation",
-                description: "Providing free legal services to underprivileged Hindus especially poor pujaris, education to hindu orphans, repairing old temples, well-being of temple pujaris & other dharmic activities.",
-                tags: ["children","legal","pujari (priest)","senior citizen","temple (re)construction"],
-                website: "https://shridharsewa.org/",
-                displayTag: ["donation"]
-            },
-            {
-                id: 28,
-                name: "Nimittekam",
-                description: "Providing rehabilitation, support & well-being towards Pakistani Hindus & Hindu refugees in Bharat.",
-                tags: ["refugee","legal","women","children"],
-                website: "https://nimittekam.org/",
-                displayTag: ["donation"]
-            },
-            {
-                id: 29,
-                name: "NCM India Council For Men Affairs",
-                description: "Working for pushing gender neutral laws, preserving men's rights & help men get justice in fake legal cases.",
-                tags: ["men","legal"],
-                website: "https://pages.razorpay.com/pl_NO47EBUgD4VI2G/view",
-                displayTag: ["donation"]
-            },
-            {
-                id: 30,
-                name: "Ekam Nyaay",
-                description: "Working for equal rights & equal justice for men and help men with legal guidance who are caught up in fake legal cases.",
-                tags: ["men","legal"],
-                website: "https://www.ekamnyaay.org/",
-                displayTag: ["donation"]
-            }
-        ];
+    </section>
 
-        // Function to populate the category filter
-        function populateCategories() {
-            const categoryFilter = document.getElementById('categoryFilter');
-            const uniqueTags = new Set();
-            
-            // Collect all unique tags
-            ngos.forEach(ngo => {
-                ngo.tags.forEach(tag => {
-                    uniqueTags.add(tag);
-                });
-            });
-            
-            // Add options to select element
-            Array.from(uniqueTags).sort().forEach(tag => {
-                const option = document.createElement('option');
-                option.value = tag;
-                option.textContent = capitalizeFirstLetter(tag);
-                categoryFilter.appendChild(option);
-            });
+    <!-- RANDOM RESULT -->
+
+    <section class="random-result" id="randomResult">
+
+        <h3>✧ Your destiny is asking you to support</h3>
+
+        <div id="randomCard"></div>
+
+    </section>
+
+    <!-- NGO RESULTS -->
+
+    <section>
+
+        <div class="results-header">
+            <h3>Organisations</h3>
+            <span id="resultCount"></span>
+        </div>
+
+        <div class="ngo-grid" id="ngoGrid"></div>
+
+        <div class="empty" id="emptyState">
+            <span>🪷</span>
+            <h3>No Organisations Found</h3>
+            <p>Try a different keyword or category.</p>
+        </div>
+
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-om">ॐ</div>
+
+    <!-- <h3>दानं परमं बलम्</h3> -->
+
+    <p>
+        The greatest contribution is one that makes
+        someone else's life better.
+    </p>
+
+    <p style="margin-top:18px">
+        Made with ♥ for a better world.
+    </p>
+
+</footer>
+
+
+<script>
+
+// =============================================
+// NGO DATABASE
+// =============================================
+
+const ngos = [
+
+    {
+        name: "Hindu Fund",
+
+        categories: ["all"],
+
+        icon: "🪷",
+
+        description: "A movement to build ₹1,000 Crore corpus to protect & promote dharma. They provide grants (fund) to all sorts of Dharmic projects run by other orgs & individuals. Kinda like mutual fund for dharmic orgs.",
+
+        link: "https://hindu.fund/"
+    },
+
+    {
+        name: "Kamakhya Bhairava Upasaka Foundation",
+
+        categories: ["Annadanam", "Temple re(construction)", "Animals"],
+
+        icon: "🍛",
+
+        description: "Working to promote tantra-based practices, building Bhairava temples, doing dog & cow seva and doing free food distributions (annadanam).",
+
+        link: "https://kamakhyabhairavaupasaka.com"
+    },
+
+    {
+        name: "Sewa Nyaya Utthan Foundation",
+
+        categories: ["Refugee", "Animals", "Children"],
+
+        icon: "👪",
+
+        description: "Helping hindu refugees, marginalized hindu communities, poor hindu children & women, gau seva (cow service) and many other dharmic activities.",
+
+        link: "https://sewanyaya.in/"
+    },
+
+    {
+        name: "Healing Himalayas",
+
+        categories: ["Environment"],
+
+        icon: "🌳",
+
+        description: "Cleaning out 100s of tonnes of trash like plastic waste from many dharmic places like Himalayas, Kedarnath etc.",
+
+        link: "https://www.healinghimalayas.org/"
+    },
+
+    {
+        name: "Parivaar",
+
+        categories: ["Children", "Women"],
+
+        icon: "👧",
+
+        description: "Inspired by ideals of Sri Ramakrishna & Swami Vivekananda, Parivaar focuses on development of highly vulnerable people from impoverished communities in West Bengal & tribal areas of Madhya Pradesh.",
+
+        link: "https://parivaar.org/"
+    },
+
+    {
+        name: "Bharat Ke Veer",
+
+        categories: ["Army"],
+
+        icon: "🪖",
+
+        description: "Directly donate to family of a martyr. Or to the corpus fund that distributes the money to fallen soilders in AR, BSF, CISF, CRPF, ITBP, NDRF, SSB & NSG.",
+
+        link: "https://bharatkeveer.gov.in/"
+    },
+
+    {
+        name: "Paramhansa Yogananda Public Charitable Trust",
+
+        categories: ["Senior Citizen", "Women"],
+
+        icon: "👵",
+
+        description: "Provides home, free/subsidized medical treatment to all abandoned, aged, destitute women, mainly widows.",
+
+        link: "https://yoganandatrust.org/"
+    },
+
+    {
+        name: "National Defence Fund",
+
+        categories: ["Army"],
+
+        icon: "🪖",
+
+        description: "This fund is used for the welfare of members of the Armed Forces (including Para Military Forces) and their dependents.",
+
+        link: "https://ndf.gov.in/"
+    },
+
+    {
+        name: "Sarthak Prayas",
+
+        categories: ["Senior Citizen", "Women", "Children"],
+
+        icon: "👵",
+
+        description: "Running a blood donor network, providing education to underprivileged children & providing welfare to struggling senior citizens in Delhi/NCR.",
+
+        link: "https://www.sarthakprayas.ngo/"
+    },
+
+    {
+        name: "Hindu Legal Fund",
+
+        categories: ["Legal"],
+
+        icon: "⚖️",
+
+        description: "This fund puts money in court cases that targets hindus; mainly to protect Dharmic interests, uphold temple rights, defend cultural practices, and strengthen legal foundation of Sanatana Dharma.",
+
+        link: "https://hindu.fund/project/legal-fund/"
+    },
+
+    {
+        name: "Indic Collective",
+
+        categories: ["Legal"],
+
+        icon: "⚖️",
+
+        description: "They pursue legal actions, advocacy & initiatives in courts & public forums to protect hindu sites & rituals.",
+
+        link: "https://www.indiccollective.org/"
+    },
+
+    {
+        name: "Reclaim Temples",
+
+        categories: ["Temple re(construction)"],
+
+        icon: "🛕",
+
+        description: "They trace, locate, document, rebuild and revive worship in old temples destroyed by invaders and their successors.",
+
+        link: "https://unct.be/reclaimtemples"
+    },
+
+    {
+        name: "People for Dharma",
+
+        categories: ["Temple re(construction)", "Legal"],
+
+        icon: "🛕",
+
+        description: "They rebuild old temples & starts regular puja. Also pursue legal actions, advocacy & initiatives in courts to protect hindu sites & practices.",
+
+        link: "https://peoplefordharma.org/"
+    },
+
+    {
+        name: "Upword",
+
+        categories: ["Media"],
+
+        icon: "📱",
+
+        description: "They produce text & video content on multiple dharmic topics & publishes them across multiple social media platforms.",
+
+        link: "https://upword.co/"
+    },
+
+    {
+        name: "Nimittekam",
+
+        categories: ["Refugee"],
+
+        icon: "👪",
+
+        description: "Providing rehabilitation, support & well-being towards Pakistani Hindus & Hindu refugees in Bharat.",
+
+        link: "https://nimittekam.org/"
+    },
+
+    {
+        name: "Ekam Nyaay",
+
+        categories: ["Men", "Legal"],
+
+        icon: "👨",
+
+        description: "Working for equal rights & equal justice for men and help men with legal guidance who are caught up in fake legal cases.",
+
+        link: "https://ekamnyaay.org/"
+    }
+];
+
+
+// =============================================
+// SECURITY HELPERS
+// =============================================
+
+function escapeHTML(value) {
+
+    return String(value).replace(/[&<>"']/g, char => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;"
+    })[char]);
+
+}
+
+
+function safeURL(value) {
+
+    try {
+
+        const url = new URL(value);
+
+        if (url.protocol === "https:" || url.protocol === "http:") {
+            return url.href;
         }
 
-        // Function to create NGO cards
-        function createNGOCards(filteredNgos) {
-            const container = document.getElementById('ngo-container');
-            container.innerHTML = '';
-            
-            if (filteredNgos.length === 0) {
-                container.innerHTML = `
-                    <div class="col-12">
-                        <div class="no-results">
-                            <i class="fas fa-search fa-3x mb-3 text-muted"></i>
-                            <h3>No Orgs Found</h3>
-                            <p>Try changing your filter criteria</p>
-                        </div>
-                    </div>
-                `;
-                return;
-            }
-            
-            filteredNgos.forEach((ngo, index) => {
-                const delay = index * 100;
-                
-                const card = document.createElement('div');
-                card.className = 'col-md-6 col-lg-4 fade-in';
-                card.style.animationDelay = `${delay}ms`;
-                
-                card.innerHTML = `
-                    <div class="ngo-card" data-website="${ngo.website}">
-                        <div class="card-body">
-                            <h5>${ngo.name}</h5>
-                            <p>${ngo.description}</p>
-                            <div class="mt-3">
-                                <span class="tag ${Array.isArray(ngo.displayTag) ? ngo.displayTag[0] : ngo.displayTag}">${capitalizeFirstLetter(Array.isArray(ngo.displayTag) ? ngo.displayTag[0] : ngo.displayTag)}</span>
-                            </div>
-                        </div>
-                    </div>
-                `;
-                
-                container.appendChild(card);
-            });
-        }
+    } catch (error) {}
 
-        // Function to capitalize first letter
-        function capitalizeFirstLetter(string) {
-            return string.charAt(0).toUpperCase() + string.slice(1);
-        }
+    return "#";
 
-        // Filter NGOs based on selected category and search term
-        function filterNGOs() {
-            const selectedCategory = document.getElementById('categoryFilter').value;
-            const searchTerm = document.getElementById('searchInput').value.toLowerCase().trim();
-            
-            let filteredNgos = ngos;
-            
-            // Apply category filter first
-            if (selectedCategory !== 'all') {
-                filteredNgos = filteredNgos.filter(ngo => ngo.tags.includes(selectedCategory));
-            }
-            
-            // Apply search filter if there's a search term and only for NGOs that have 'services' in their displayTag
-            if (searchTerm) {
-                filteredNgos = filteredNgos.filter(ngo => {
-                    // Check if displayTag contains 'services'
-                    const hasServices = Array.isArray(ngo.displayTag) 
-                        ? ngo.displayTag.includes('services')
-                        : ngo.displayTag === 'services';
-                    
-                    if (hasServices) {
-                        return ngo.description.toLowerCase().includes(searchTerm);
-                    }
-                    // If displayTag doesn't contain 'services' and there's a search term, don't include it
-                    return false;
-                });
-            }
-            
-            createNGOCards(filteredNgos);
-        }
+}
 
-        // Function to handle card clicks
-        function handleCardClick(event) {
-            const card = event.target.closest('.ngo-card');
-            if (card) {
-                const website = card.dataset.website;
-                if (website) {
-                    window.open(website, '_blank');
-                }
-            }
-        }
 
-        // Function to handle random NGO selection
-        function selectRandomDonationNgo() {
-            // Filter NGOs with donation display tag (check first element if array, or string directly)
-            const donationNgos = ngos.filter(ngo => {
-                const firstDisplayTag = Array.isArray(ngo.displayTag) ? ngo.displayTag[0] : ngo.displayTag;
-                return firstDisplayTag === 'donation';
-            });
-            
-            // If no donation NGOs, show an alert
-            if (donationNgos.length === 0) {
-                alert('No donation NGOs available.');
-                return;
-            }
-            
-            // Randomly select one NGO
-            const randomNgo = donationNgos[Math.floor(Math.random() * donationNgos.length)];
-            
-            // Clear existing cards
-            const container = document.getElementById('ngo-container');
-            container.innerHTML = '';
-            
-            // Create card for the selected NGO
-            const card = document.createElement('div');
-            card.className = 'col-12 fade-in';
-            card.style.animationDelay = '100ms';
-            
-            const firstDisplayTag = Array.isArray(randomNgo.displayTag) ? randomNgo.displayTag[0] : randomNgo.displayTag;
-            
-            card.innerHTML = `
-                <div class="ngo-card" data-website="${randomNgo.website}">
-                    <div class="card-body">
-                        <h5 class="text-center mb-4"><i class="fas fa-star text-warning me-2"></i>Recommended Org for you</h5>
-                        <h4 class="text-center mb-3">${randomNgo.name}</h4>
-                        <p class="text-center">${randomNgo.description}</p>
-                        <div class="text-center mt-3">
-                            <span class="tag ${firstDisplayTag}">${capitalizeFirstLetter(firstDisplayTag)}</span>
-                        </div>
-                    </div>
+// =============================================
+// CREATE NGO CARD
+// =============================================
+
+function createCard(ngo) {
+
+    const categories = ngo.categories.map(category => `
+        <span class="category-tag">
+            ${escapeHTML(category)}
+        </span>
+    `).join("");
+
+    const url = safeURL(ngo.link);
+
+    return `
+        <article
+            class="ngo-card"
+            data-url="${escapeHTML(url)}"
+            role="link"
+            tabindex="0"
+            aria-label="Visit ${escapeHTML(ngo.name)} website"
+        >
+
+            <div class="card-top">
+
+                <div class="category-tags">
+                    ${categories}
                 </div>
-            `;
-            
-            container.appendChild(card);
-            
-            // Add click event to the card
-            card.addEventListener('click', () => {
-                window.open(randomNgo.website, '_blank');
-            });
+
+                <span class="card-icon">
+                    ${escapeHTML(ngo.icon)}
+                </span>
+
+            </div>
+
+            <h4>${escapeHTML(ngo.name)}</h4>
+
+            <p class="description">
+                ${escapeHTML(ngo.description)}
+            </p>
+
+            <div class="card-footer">
+
+                <a
+                    class="donate-link"
+                    href="${escapeHTML(url)}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Visit Website ↗
+                </a>
+
+            </div>
+
+        </article>
+    `;
+
+}
+
+
+// =============================================
+// DISPLAY NGOS
+// =============================================
+
+function displayNGOs(data) {
+
+    const grid = document.getElementById("ngoGrid");
+
+    const empty = document.getElementById("emptyState");
+
+    const count = document.getElementById("resultCount");
+
+    grid.innerHTML = "";
+
+    count.textContent = `${data.length} Organisations`;
+
+    if (data.length === 0) {
+
+        empty.style.display = "block";
+
+        return;
+
+    }
+
+    empty.style.display = "none";
+
+    grid.innerHTML = data.map(createCard).join("");
+
+}
+
+
+// =============================================
+// LIVE SEARCH + CATEGORY FILTER
+// =============================================
+
+function filterNGOs() {
+
+    const category = document.getElementById("categoryFilter").value;
+
+    const keyword = document
+        .getElementById("searchInput")
+        .value
+        .toLowerCase()
+        .trim();
+
+    const filtered = ngos.filter(ngo => {
+
+        // Check whether selected category exists
+        // in the NGO's categories array.
+
+        const matchesCategory =
+            category === "all" ||
+            ngo.categories.includes(category);
+
+
+        // Search NGO name, all categories and description.
+
+        const searchableText = `
+            ${ngo.name}
+            ${ngo.categories.join(" ")}
+            ${ngo.description}
+        `.toLowerCase();
+
+        const matchesKeyword =
+            searchableText.includes(keyword);
+
+        return matchesCategory && matchesKeyword;
+
+    });
+
+    document.getElementById("randomResult").style.display = "none";
+
+    displayNGOs(filtered);
+
+}
+
+
+// =============================================
+// RANDOM NGO SUGGESTION
+// =============================================
+
+function randomNGO() {
+
+    if (ngos.length === 0) {
+
+        alert("Please add some organisations first.");
+
+        return;
+
+    }
+
+    // Select from ALL NGOs, not just filtered NGOs.
+
+    const randomIndex = Math.floor(Math.random() * ngos.length);
+
+    const selectedNGO = ngos[randomIndex];
+
+    document.getElementById("randomCard").innerHTML =
+        createCard(selectedNGO);
+
+    document.getElementById("randomResult").style.display = "block";
+
+    document.getElementById("randomResult").scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+    });
+
+}
+
+
+// =============================================
+// MAKE ENTIRE NGO CARD CLICKABLE
+// =============================================
+
+document.addEventListener("click", function(event) {
+
+    const card = event.target.closest(".ngo-card");
+
+    if (!card) return;
+
+    // Let the individual Visit Website link work normally.
+
+    if (event.target.closest("a")) return;
+
+    const url = card.dataset.url;
+
+    if (url && url !== "#") {
+        window.open(url, "_blank", "noopener,noreferrer");
+    }
+
+});
+
+
+// Keyboard accessibility for clickable cards.
+
+document.addEventListener("keydown", function(event) {
+
+    const card = event.target.closest(".ngo-card");
+
+    if (!card) return;
+
+    if (event.target.closest("a")) return;
+
+    if (event.key === "Enter") {
+
+        event.preventDefault();
+
+        const url = card.dataset.url;
+
+        if (url && url !== "#") {
+            window.open(url, "_blank", "noopener,noreferrer");
         }
 
-        window.addEventListener('DOMContentLoaded', () => {
-            populateCategories();
-            
-            // Event listeners
-            document.getElementById('categoryFilter').addEventListener('change', filterNGOs);
-            document.getElementById('searchInput').addEventListener('input', filterNGOs);
+    }
 
-            // Random NGO button event listener
-            document.getElementById('randomNgoBtn').addEventListener('click', selectRandomDonationNgo);
-            
-            // Add click event delegation to the container
-            document.getElementById('ngo-container').addEventListener('click', handleCardClick);
-            
-            // Show all NGOs initially
-            setTimeout(() => {
-                filterNGOs();
-            }, 500); // Simulate loading
-        });
-    </script>
+});
+
+
+// =============================================
+// AUTOMATIC SEARCH WHILE TYPING
+// =============================================
+
+document
+    .getElementById("searchInput")
+    .addEventListener("input", filterNGOs);
+
+
+// =============================================
+// CATEGORY FILTER
+// =============================================
+
+document
+    .getElementById("categoryFilter")
+    .addEventListener("change", filterNGOs);
+
+
+// =============================================
+// INITIAL PAGE LOAD
+// =============================================
+
+displayNGOs(ngos);
+
+</script>
+
 </body>
 </html>
